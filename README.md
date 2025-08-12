@@ -208,7 +208,7 @@ GitHub: https://github.com/c0mentropy/codec
 ## Contributing
 
 Contributions and bug reports are welcome!  
-Feel free to open issues or submit pull requests on [GitHub](https://github.com/yourgithub/codec).
+Feel free to open issues or submit pull requests on [GitHub](https://github.com/c0mentropy/codec).
 
 ---
 
