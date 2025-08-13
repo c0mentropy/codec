@@ -173,12 +173,18 @@ func doDecode(algo, input string, repeat int) string {
 	for i := 0; i < repeat; i++ {
 		switch algo {
 		case "base64":
+			data += strings.Repeat("=", (4 - len(data) % 4) % 4)
 			out, err = base64.StdEncoding.DecodeString(data)
 		case "base64url":
+			data += strings.Repeat("=", (4 - len(data) % 4) % 4)
 			out, err = base64.URLEncoding.DecodeString(data)
 		case "base32":
+			data += strings.Repeat("=", (8 - len(data) % 8) % 8)
 			out, err = base32.StdEncoding.DecodeString(data)
 		case "hex":
+			if len(data) % 2 != 0 {
+				data = "0" + data
+			}
 			out, err = hex.DecodeString(data)
 		case "base85":
 			dst := make([]byte, len(data))
@@ -266,12 +272,19 @@ func doHash(algo, input string) string {
 }
 
 func readData(path string) string {
+	var dataStr string
 	if fileExists(path) {
 		data, err := os.ReadFile(path)
 		checkErr(err)
-		return string(data)
+		dataStr = string(data)
+	} else {
+		dataStr = path
 	}
-	return path
+
+	// 新增：去除首尾空白字符（包括换行符）
+	dataStr = strings.TrimSpace(dataStr)
+
+	return dataStr
 }
 
 func fileExists(path string) bool {
@@ -286,7 +299,7 @@ func checkErr(err error) {
 	}
 }
 
-const version = "v0.0.1"
+const version = "v0.0.2"
 const author = "Ckyan Comentroy"
 const email = "comentropy@foxmail.com"
 const github = "https://github.com/c0mentropy/codec"
