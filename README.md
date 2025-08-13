@@ -117,6 +117,7 @@ codec decode base64 encoded.txt -o image_decoded.png
 codec encode base64 "data" --repeat 3
 - 详细模式查看详细信息：
 codec encode base64 "hello" -v
+
 ---
 
 ## 高级功能
@@ -139,17 +140,6 @@ codec encode base64 ./file.bin -o encoded.txt
 codec decode base64 encoded.txt -v
 这会显示操作、算法、输入/输出长度、重复次数和其他信息。
 
----
-
-## 版本和作者信息
-
-使用以下命令显示版本、作者和联系信息：
-codec -V
-输出示例：
-codec version v0.0.1
-作者: Ckyan Comentroy
-邮箱: comentropy@foxmail.com
-GitHub: https://github.com/c0mentropy/codec
 ---
 
 ## 贡献
