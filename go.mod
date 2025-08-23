@@ -1,4 +1,4 @@
-module codec
+module github.com/c0mentropy/codec
 
 go 1.24.4
 
