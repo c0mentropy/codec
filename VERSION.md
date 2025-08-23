@@ -2,6 +2,10 @@
 
 ---
 
+## v0.0.3
+
+- Update module path to GitHub
+
 ## v0.0.2
 
 - 修复了base64解码不能自动补全`=`的bug (issue：[YZBRH (BR)](https://github.com/YZBRH) opened on Aug 13, 2025)

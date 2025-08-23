@@ -299,7 +299,7 @@ func checkErr(err error) {
 	}
 }
 
-const version = "v0.0.2"
+const version = "v0.0.3"
 const author = "Ckyan Comentroy"
 const email = "comentropy@foxmail.com"
 const github = "https://github.com/c0mentropy/codec"
