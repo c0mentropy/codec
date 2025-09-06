@@ -70,13 +70,13 @@
 
 ## 安装
 
-确保你已安装[Go](https://golang.org/dl/)（建议版本1.16+）。
+确保你已安装[Go](https://golang.org/dl/)
 
 克隆仓库并构建：
 git clone https://github.com/c0mentropy/codec.git
 cd codec
 go build -o codec main.go
-或从[发布页](https://github.com/c0mentropy/codec/releases)下载预编译二进制文件（即将推出）。
+或从[发布页](https://github.com/c0mentropy/codec/releases)下载预编译二进制文件
 
 ---
 

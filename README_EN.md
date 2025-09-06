@@ -70,7 +70,7 @@ Zero dependencies, written in Go — support base64, base32, hex, base85, base58
 
 ## Installation
 
-Make sure you have [Go](https://golang.org/dl/) installed (version 1.16+ recommended).
+Make sure you have [Go](https://golang.org/dl/) installed
 
 Clone the repo and build:
 
@@ -80,7 +80,7 @@ cd codec
 go build -o codec main.go
 ```
 
-Or download prebuilt binaries from [Releases](https://github.com/c0mentropy/codec/releases) (coming soon).
+Or download prebuilt binaries from [Releases](https://github.com/c0mentropy/codec/releases)
 
 ---
 
